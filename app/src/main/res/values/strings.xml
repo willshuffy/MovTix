@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MovTix</string>
+    <string name="lewati_perkenalan">Lewati Perkenalan</string>
+    <string name="lanjutkan">Lanjutkan</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="desk_now_playing">Lebih mudah untuk mengetahui \n film yang sedang tampil</string>
+    <string name="desk_presale">Tidak khawatir ketinggalan \n  update film terbaru</string>
+    <string name="pre_sale">Pre Sale</string>
+    <string name="desk_cashless">Gunakan e-wallet untuk \n transaksi tiket nonton</string>
+    <string name="cashless">Cashless</string>
+    <string name="memulai">Memulai</string>
 </resources>
