@@ -25,4 +25,6 @@
     <string name="layar_bioskop">LAYAR BIOSKOP</string>
     <string name="empty">Empty</string>
     <string name="beli_tiket">Beli Tiket</string>
+    <string name="booked">Booked</string>
+    <string name="selected">Selected</string>
 </resources>
