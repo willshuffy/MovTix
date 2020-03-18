@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBlue"
-    tools:context=".CheckoutActivity">
-
+    tools:context=".CheckoutFailedActivity">
 
     <Button
         android:id="@+id/button2"
@@ -20,23 +19,6 @@
         android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/shape_rectangel_pink"
-        android:text="@string/bayar_sekarang"
-        android:textColor="@color/colorWhite"
-        android:textStyle="bold"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -162,85 +144,86 @@
             android:id="@+id/rv_seat_number"
             android:layout_marginTop="8dp"/>
 
-       <!-- <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="8dp">
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="8dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/nomor_seat"
-                android:textColor="@color/colorWhite"
-                android:drawableLeft="@drawable/ic_event_seat_24px"
-                android:drawablePadding="10dp"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="@string/nomor_seat"
+                 android:textColor="@color/colorWhite"
+                 android:drawableLeft="@drawable/ic_event_seat_24px"
+                 android:drawablePadding="10dp"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="IDR 70.000"
-                android:textColor="@color/colorWhite"
-                android:gravity="right"
-                android:paddingRight="4dp"
-                android:textStyle="bold"/>
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="IDR 70.000"
+                 android:textColor="@color/colorWhite"
+                 android:gravity="right"
+                 android:paddingRight="4dp"
+                 android:textStyle="bold"/>
 
-        </LinearLayout>
+         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="8dp">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="8dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Seat No. C2"
-                android:textColor="@color/colorWhite"
-                android:drawableLeft="@drawable/ic_event_seat_24px"
-                android:drawablePadding="10dp"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Seat No. C2"
+                 android:textColor="@color/colorWhite"
+                 android:drawableLeft="@drawable/ic_event_seat_24px"
+                 android:drawablePadding="10dp"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="IDR 70.000"
-                android:textColor="@color/colorWhite"
-                android:gravity="right"
-                android:paddingRight="4dp"
-                android:textStyle="bold"/>
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="IDR 70.000"
+                 android:textColor="@color/colorWhite"
+                 android:gravity="right"
+                 android:paddingRight="4dp"
+                 android:textStyle="bold"/>
 
-        </LinearLayout>
+         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="8dp">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginTop="8dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="@string/total"
-                android:textColor="@color/colorWhite"
-                android:paddingLeft="34dp"/>
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:text="@string/total"
+                 android:textColor="@color/colorWhite"
+                 android:paddingLeft="34dp"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="IDR 140.000"
-                android:textColor="@color/colorWhite"
-                android:gravity="right"
-                android:paddingRight="4dp"
-                android:textStyle="bold"/>
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="IDR 140.000"
+                 android:textColor="@color/colorWhite"
+                 android:gravity="right"
+                 android:paddingRight="4dp"
+                 android:textStyle="bold"/>
 
-        </LinearLayout>-->
+         </LinearLayout>-->
 
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="70dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
@@ -253,36 +236,48 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/wallet"
-            android:textSize="18sp"
             android:textColor="@color/colorWhite"
-            android:textStyle="bold"/>
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/total_balance"
-                android:textColor="@color/colorWhite"
                 android:drawableLeft="@drawable/ic_account_balance_wallet_24px"
-                android:drawablePadding="10dp"/>
+                android:drawablePadding="10dp"
+                android:text="@string/total_balance"
+                android:textColor="@color/colorWhite" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="IDR 200.000"
-                android:textColor="@color/colorGreen"
                 android:gravity="right"
                 android:paddingRight="4dp"
-                android:textStyle="bold"/>
+                android:text="IDR 20.000"
+                android:textColor="@color/colorPink"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:paddingLeft="24dp"
+        android:text="@string/saldo_tidak_cukup"
+        android:textColor="@color/colorWhiteGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
