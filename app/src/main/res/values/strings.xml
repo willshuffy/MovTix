@@ -42,4 +42,6 @@
     <string name="home">Home</string>
     <string name="happy_watching">Happy Watching!</string>
     <string name="desk_tiket_">Tiket telah berhasil dibeli dan \nselamat menikmati film</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="simpan_data_baru">Simpan Data Baru</string>
 </resources>
