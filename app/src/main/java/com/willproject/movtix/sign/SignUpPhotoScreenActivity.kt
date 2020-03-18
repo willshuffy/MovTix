@@ -1,7 +1,8 @@
-package com.willproject.movtix
+package com.willproject.movtix.sign
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.willproject.movtix.R
 
 class SignUpPhotoScreenActivity : AppCompatActivity() {
 
