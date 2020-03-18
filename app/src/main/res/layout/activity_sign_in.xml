@@ -8,7 +8,7 @@
     tools:context=".sign.SignInActivity">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_signin"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -22,7 +22,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btn_next"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -31,7 +31,7 @@
             android:background="@drawable/shape_rectangel_pink"
             android:text="@string/lanjutkan"
             android:textColor="@color/colorWhite"
-            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintBottom_toTopOf="@+id/btn_signin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -82,6 +82,7 @@
             android:backgroundTint="@color/colorWhite"
             android:ems="10"
             android:inputType="textPersonName"
+            android:textColor="@color/colorWhite"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
