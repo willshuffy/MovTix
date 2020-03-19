@@ -18,7 +18,7 @@ class SplashScreenActivity : AppCompatActivity() {
                 OnboardingOneActivity::class.java)
             startActivity(intent)
             finish()
-        }, 5000)
+        }, 3000)
 
     }
 }
