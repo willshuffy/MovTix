@@ -48,4 +48,6 @@
     <string name="saldo_tersedia">Saldo Tersedia</string>
     <string name="daftar_transaksi">Daftar Transaksi</string>
     <string name="history">History</string>
+    <string name="masuk_akun">Masuk Akun</string>
+    <string name="daftar_akun">Daftar Akun Baru</string>
 </resources>

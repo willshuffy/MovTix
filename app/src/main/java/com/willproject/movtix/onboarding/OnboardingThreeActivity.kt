@@ -4,10 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.willproject.movtix.R
-import com.willproject.movtix.sign.SignInActivity
-import kotlinx.android.synthetic.main.activity_onboarding_one.*
+import com.willproject.movtix.sign.signin.SignInActivity
 import kotlinx.android.synthetic.main.activity_onboarding_one.btn_next
-import kotlinx.android.synthetic.main.activity_onboarding_three.*
 
 class OnboardingThreeActivity : AppCompatActivity() {
 
