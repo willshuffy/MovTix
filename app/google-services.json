@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "698903580159",
+    "firebase_url": "https://movtix-c418d.firebaseio.com",
+    "project_id": "movtix-c418d",
+    "storage_bucket": "movtix-c418d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698903580159:android:b38eba5adae9b510f2ebca",
+        "android_client_info": {
+          "package_name": "com.willproject.movtix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698903580159-rg23c1r84d5o022f0ihb4kkh1599lb04.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.willproject.movtix",
+            "certificate_hash": "a15dab81eaa89228ccad2b7f05132ed58518a4ce"
+          }
+        },
+        {
+          "client_id": "698903580159-g93dqfk6shg1ucrrd80l7i33vnml2mvg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwIEBtptl49HobWh9vRRRGsHHeYRvj-kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698903580159-g93dqfk6shg1ucrrd80l7i33vnml2mvg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

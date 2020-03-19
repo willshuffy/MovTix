@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.willproject.movtix">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,16 +24,20 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".sign.SignUpPhotoScreenActivity" />
         <activity android:name=".sign.SignUpActivity" />
-        <activity android:name=".sign.SignInActivity" />
-        <activity android:name=".onboarding.OnboardingThreeActivity" />
-        <activity android:name=".onboarding.OnboardingTwoActivity" />
-        <activity android:name=".onboarding.OnboardingOneActivity" />
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name=".sign.SignInActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity android:name=".onboarding.OnboardingThreeActivity" />
+        <activity android:name=".onboarding.OnboardingTwoActivity" />
+        <activity android:name=".onboarding.OnboardingOneActivity" />
+        <activity android:name=".SplashScreenActivity">
+
         </activity>
     </application>
 
