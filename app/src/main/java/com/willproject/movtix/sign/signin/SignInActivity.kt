@@ -2,12 +2,13 @@ package com.willproject.movtix.sign.signin
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.*
 import com.willproject.movtix.HomeActivity
 import com.willproject.movtix.R
+import com.willproject.movtix.sign.SignUpActivity
+import com.willproject.movtix.utils.Preferences
 import kotlinx.android.synthetic.main.activity_sign_in.*
 
 
@@ -17,12 +18,22 @@ class SignInActivity : AppCompatActivity() {
     lateinit var iPassword: String
 
     lateinit var mDatabase: DatabaseReference
+    lateinit var preferences: Preferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
 
         mDatabase =FirebaseDatabase.getInstance().getReference("User")
+        preferences = Preferences(this)
+
+        preferences.setValues("onboarding", "1")
+        if (preferences.getValues("status").equals("1")){
+            finishAffinity()
+
+            val intent = Intent( this@SignInActivity, HomeActivity::class.java)
+            startActivity(intent)
+        }
 
         btn_next.setOnClickListener {
             iUsername = et_username.text.toString()
@@ -38,6 +49,11 @@ class SignInActivity : AppCompatActivity() {
                 pushLogin(iUsername, iPassword)
             }
         }
+
+        btn_signin.setOnClickListener {
+            val intent = Intent( this@SignInActivity, SignUpActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun pushLogin(iUsername: String, iPassword : String){
@@ -51,12 +67,12 @@ class SignInActivity : AppCompatActivity() {
                     if (user.password.equals(iPassword)){
                         Toast.makeText(this@SignInActivity, "Selamat Datang", Toast.LENGTH_SHORT).show()
 
-//                        preferences.setValues("nama", user.nama.toString())
-//                        preferences.setValues("user", user.username.toString())
-//                        preferences.setValues("url", user.url.toString())
-//                        preferences.setValues("email", user.email.toString())
-//                        preferences.setValues("saldo", user.saldo.toString())
-//                        preferences.setValues("status", "1")
+                        preferences.setValues("nama", user.nama.toString())
+                        preferences.setValues("user", user.username.toString())
+                        preferences.setValues("url", user.url.toString())
+                        preferences.setValues("email", user.email.toString())
+                        preferences.setValues("saldo", user.saldo.toString())
+                        preferences.setValues("status", "1")
 
                         finishAffinity()
 
