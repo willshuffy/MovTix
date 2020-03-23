@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.*
 import com.willproject.movtix.HomeActivity
 import com.willproject.movtix.R
-import com.willproject.movtix.sign.SignUpActivity
+import com.willproject.movtix.sign.signup.SignUpActivity
 import com.willproject.movtix.utils.Preferences
 import kotlinx.android.synthetic.main.activity_sign_in.*
 

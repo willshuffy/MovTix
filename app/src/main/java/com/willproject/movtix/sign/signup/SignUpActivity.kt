@@ -1,11 +1,10 @@
-package com.willproject.movtix.sign
+package com.willproject.movtix.sign.signup
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.google.firebase.database.*
-import com.willproject.movtix.HomeActivity
 import com.willproject.movtix.R
 import com.willproject.movtix.sign.signin.User
 import com.willproject.movtix.utils.Preferences
