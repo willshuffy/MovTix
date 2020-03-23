@@ -1,15 +1,10 @@
 package com.willproject.movtix.sign.signup
 
-import android.Manifest
-import android.annotation.SuppressLint
-import android.app.Activity
 import android.app.ProgressDialog
 import android.content.Intent
-import android.graphics.Bitmap
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.MediaStore
 import android.view.View
 import android.widget.Toast
 import com.bumptech.glide.Glide
@@ -17,12 +12,11 @@ import com.bumptech.glide.request.RequestOptions
 import com.github.dhaval2404.imagepicker.ImagePicker
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
-import com.karumi.dexter.Dexter
 import com.karumi.dexter.PermissionToken
 import com.karumi.dexter.listener.PermissionDeniedResponse
 import com.karumi.dexter.listener.PermissionGrantedResponse
 import com.karumi.dexter.listener.single.PermissionListener
-import com.willproject.movtix.HomeActivity
+import com.willproject.movtix.home.HomeActivity
 import com.willproject.movtix.R
 import com.willproject.movtix.utils.Preferences
 import kotlinx.android.synthetic.main.activity_sign_up_photo_screen.*

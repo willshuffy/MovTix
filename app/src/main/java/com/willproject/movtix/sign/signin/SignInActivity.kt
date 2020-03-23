@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.*
-import com.willproject.movtix.HomeActivity
+import com.willproject.movtix.home.HomeActivity
 import com.willproject.movtix.R
 import com.willproject.movtix.sign.signup.SignUpActivity
 import com.willproject.movtix.utils.Preferences

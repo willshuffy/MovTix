@@ -3,7 +3,6 @@ package com.willproject.movtix.onboarding
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.willproject.movtix.HomeActivity
 import com.willproject.movtix.R
 import com.willproject.movtix.sign.signin.SignInActivity
 import com.willproject.movtix.utils.Preferences
