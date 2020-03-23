@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.willproject.movtix.R
+import com.willproject.movtix.home.dashboard.DashboardFragment
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
@@ -15,7 +16,8 @@ class HomeActivity : AppCompatActivity() {
 
         val fragmentTiket = TiketFragment()
         val fragmentSetting = SettingFragment()
-        val fragmentHome = DashboardFragment()
+        val fragmentHome =
+            DashboardFragment()
 
         setFragment(fragmentHome)
 
