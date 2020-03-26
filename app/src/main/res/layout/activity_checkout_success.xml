@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBlue"
-    tools:context=".CheckoutSuccessActivity">
+    tools:context=".checkout.CheckoutSuccessActivity">
 
     <Button
         android:id="@+id/btn_next"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/shape_rectangel_blue_grey"
         android:text="@string/home"
         android:textColor="@color/colorWhite"
@@ -56,6 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat"
         android:text="@string/happy_watching"
         android:textColor="@color/colorWhite"
         android:textSize="30sp"
@@ -69,6 +70,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat"
         android:gravity="center"
         android:text="@string/desk_tiket_"
         android:textColor="@color/colorWhite"

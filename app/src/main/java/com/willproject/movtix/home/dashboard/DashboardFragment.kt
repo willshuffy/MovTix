@@ -93,9 +93,10 @@ class DashboardFragment : Fragment() {
      })
     }
 
-    private fun currecy(harga: Double, textView: TextView) {
+    private fun currecy(harga:Double, textView: TextView) {
         val localeID = Locale("in", "ID")
         val formatRupiah = NumberFormat.getCurrencyInstance(localeID)
         textView.setText(formatRupiah.format(harga as Double))
+
     }
 }
