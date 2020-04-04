@@ -39,5 +39,7 @@ class SettingFragment : Fragment() {
             .load(preferences.getValues("url"))
             .apply(RequestOptions.circleCropTransform())
             .into(iv_profile)
+
+
     }
 }

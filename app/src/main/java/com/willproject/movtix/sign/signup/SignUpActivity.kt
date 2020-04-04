@@ -27,12 +27,17 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
+
+//        inisialize firebase
         mFirebaseInstance = FirebaseDatabase.getInstance()
         mDatabase = FirebaseDatabase.getInstance().getReference()
         mFirebaseDatabase = mFirebaseInstance.getReference("User")
 
+//        ambil data internal hp
         preferences = Preferences(this)
 
+
+//        action button enter data
         btn_next.setOnClickListener {
             sUsername = et_username.text.toString()
             sPassword = et_password.text.toString()
@@ -52,12 +57,12 @@ class SignUpActivity : AppCompatActivity() {
                 et_email.error = "Silahkan isi email"
                 et_email.requestFocus()
             }else{
-                savUser (sUsername, sPassword, sNama, sEmail)
+                saveUser (sUsername, sPassword, sNama, sEmail)
             }
         }
     }
 
-    private fun savUser(sUsername: String, sPassword: String, sNama: String, sEmail: String) {
+    private fun saveUser(sUsername: String, sPassword: String, sNama: String, sEmail: String) {
 
         val user = User()
         user.username = sUsername

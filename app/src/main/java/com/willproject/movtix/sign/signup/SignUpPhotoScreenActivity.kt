@@ -25,7 +25,7 @@ import java.util.*
 
 class SignUpPhotoScreenActivity : AppCompatActivity(), PermissionListener {
 
-    val REQUEST_IMAGE_CAPTURE = 1
+//    val REQUEST_IMAGE_CAPTURE = 1
     var statusAdd: Boolean = false
     lateinit var filePath: Uri
 
@@ -132,7 +132,6 @@ class SignUpPhotoScreenActivity : AppCompatActivity(), PermissionListener {
     }
 
     override fun onPermissionDenied(response: PermissionDeniedResponse?) {
-        //To change body of created functions use File | Settings | File Templates.
         Toast.makeText(this, "Anda tidak bisa menambahkan photo profile", Toast.LENGTH_LONG).show()
     }
 
