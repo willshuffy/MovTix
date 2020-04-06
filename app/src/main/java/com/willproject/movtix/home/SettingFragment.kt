@@ -1,5 +1,6 @@
 package com.willproject.movtix.home
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,6 +11,7 @@ import com.bumptech.glide.request.RequestOptions
 
 import com.willproject.movtix.R
 import com.willproject.movtix.utils.Preferences
+import com.willproject.movtix.wallet.MyWalletActivity
 import kotlinx.android.synthetic.main.fragment_setting.*
 
 /**
@@ -40,6 +42,8 @@ class SettingFragment : Fragment() {
             .apply(RequestOptions.circleCropTransform())
             .into(iv_profile)
 
-
+        tv_my_wallet.setOnClickListener {
+            startActivity(Intent(activity, MyWalletActivity::class.java))
+        }
     }
 }
