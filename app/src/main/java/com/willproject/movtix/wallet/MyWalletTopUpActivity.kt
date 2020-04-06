@@ -1,5 +1,6 @@
 package com.willproject.movtix.wallet
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -36,6 +37,10 @@ class MyWalletTopUpActivity : AppCompatActivity() {
 
         iv_back.setOnClickListener {
             finish()
+        }
+
+        btn_top_up.setOnClickListener {
+            startActivity(Intent(this, MyWalletSuccessActivity::class.java))
         }
     }
 
