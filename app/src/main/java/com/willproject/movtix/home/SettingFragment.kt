@@ -2,6 +2,7 @@ package com.willproject.movtix.home
 
 import android.content.Intent
 import android.os.Bundle
+import android.provider.Settings
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -44,6 +45,11 @@ class SettingFragment : Fragment() {
 
         tv_my_wallet.setOnClickListener {
             startActivity(Intent(activity, MyWalletActivity::class.java))
+        }
+
+
+        tv_language.setOnClickListener {
+            startActivity(Intent(Settings.ACTION_LOCALE_SETTINGS))
         }
     }
 }
