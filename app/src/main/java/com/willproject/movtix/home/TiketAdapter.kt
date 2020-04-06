@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.willproject.movtix.R
-import com.willproject.movtix.checkout.CheckoutAdapter
+import com.willproject.movtix.checkout.adapter.CheckoutAdapter
 import com.willproject.movtix.checkout.model.Checkout
 import java.util.*
 
