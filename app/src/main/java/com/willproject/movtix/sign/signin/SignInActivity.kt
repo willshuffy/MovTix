@@ -10,6 +10,10 @@ import com.willproject.movtix.R
 import com.willproject.movtix.sign.signup.SignUpActivity
 import com.willproject.movtix.utils.Preferences
 import kotlinx.android.synthetic.main.activity_sign_in.*
+import kotlinx.android.synthetic.main.activity_sign_in.btn_next
+import kotlinx.android.synthetic.main.activity_sign_in.et_password
+import kotlinx.android.synthetic.main.activity_sign_in.et_username
+import kotlinx.android.synthetic.main.activity_sign_up.*
 
 
 class SignInActivity : AppCompatActivity() {
@@ -46,7 +50,14 @@ class SignInActivity : AppCompatActivity() {
                 et_password.error = "Silahkan tulis Password anda"
                 et_password.requestFocus()
             }else{
-                pushLogin(iUsername, iPassword)
+                var statusUsername = iUsername.indexOf(".")
+                if (statusUsername>=0){
+                    et_username.error = "Silahkan tulis username anda tanpa ."
+                    et_username.requestFocus()
+                }else{
+                    pushLogin(iUsername, iPassword)
+                }
+
             }
         }
 

@@ -57,7 +57,15 @@ class SignUpActivity : AppCompatActivity() {
                 et_email.error = "Silahkan isi email"
                 et_email.requestFocus()
             }else{
-                saveUser (sUsername, sPassword, sNama, sEmail)
+
+                var statusUsername = sUsername.indexOf(".")
+                if (statusUsername>=0){
+                    et_username.error = "Silahkan tulis username anda tanpa ."
+                    et_username.requestFocus()
+                }else{
+                    saveUser (sUsername, sPassword, sNama, sEmail)
+                }
+
             }
         }
     }
