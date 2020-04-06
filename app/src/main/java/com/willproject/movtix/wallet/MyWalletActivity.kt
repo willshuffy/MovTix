@@ -1,5 +1,6 @@
 package com.willproject.movtix.wallet
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -67,6 +68,10 @@ class MyWalletActivity : AppCompatActivity() {
 
         iv_back.setOnClickListener {
             finish()
+        }
+
+        btn_top_up.setOnClickListener {
+            startActivity(Intent(this@MyWalletActivity, MyWalletTopUpActivity::class.java))
         }
 
     }
