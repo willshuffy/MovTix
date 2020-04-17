@@ -57,7 +57,7 @@ class DashboardFragment : Fragment() {
             .into(iv_profile)
 
         rv_now_playing.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-        rv_coming_soon.layoutManager = LinearLayoutManager(context!!.applicationContext)
+        rv_coming_soon.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         getData()
     }
 
